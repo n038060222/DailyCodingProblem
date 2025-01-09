@@ -9,7 +9,7 @@ int solution(vector<int>& temperatures) {
         currentDay=temperatures[i];
         nextDay=temperatures[i+1];
         
-        if(abs(currentDay-lastDay)<=5&&abs(nextDay-currentDay)<=5)
+        if(currentDay-lastDay<=5&&abs(nextDay-currentDay)<=5)
             warmNights++;
         
     }
